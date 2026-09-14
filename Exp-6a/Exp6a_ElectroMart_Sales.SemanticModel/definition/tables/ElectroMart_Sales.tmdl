@@ -1,0 +1,135 @@
+table ElectroMart_Sales
+	lineageTag: 249ed0bb-a432-f76b-3566-64779cd81590
+
+	measure 'Total Sales' = SUM('ElectroMart_Sales'[Sales])
+		formatString: \₹#,0
+		lineageTag: 642d2942-b06c-e555-0206-f4ac6596576c
+
+	measure 'Total Units' = SUM('ElectroMart_Sales'[UnitsSold])
+		formatString: #,0
+		lineageTag: 53bcb39a-c105-2e0e-4272-476c595eefa1
+
+	measure 'Total Orders' = COUNTROWS('ElectroMart_Sales')
+		formatString: #,0
+		lineageTag: b3c3f58e-d2d7-d995-734f-613adc89d73a
+
+	measure 'Average Order Value' = DIVIDE([Total Sales], [Total Orders])
+		formatString: \₹#,0
+		lineageTag: d985b5d9-90a5-f9cd-a6fb-e22379a6b194
+
+	column OrderID
+		dataType: string
+		lineageTag: 44351d8d-328d-1df5-4060-d2ce98d9c1e9
+		summarizeBy: none
+		sourceColumn: OrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a9ccb2a5-5b89-601c-2136-78d3b8e2a7d9
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Product
+		dataType: string
+		lineageTag: 94007b21-62ab-b0c3-5c90-10fda211a53a
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 250b3417-df0a-cb1b-aa06-d21f85804aa7
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 38a20d95-09d5-5f72-2b13-3db8e3bbe2bb
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 7350d014-34ee-cab9-c487-c6cfc8ee71f9
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitsSold
+		dataType: int64
+		formatString: #,0
+		lineageTag: 2a87e911-4c70-af6d-f491-62209a47b928
+		summarizeBy: sum
+		sourceColumn: UnitsSold
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPrice
+		dataType: int64
+		formatString: \₹#,0
+		lineageTag: fd16b2db-cd72-0276-0a03-7301f29d84b2
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: int64
+		formatString: \₹#,0
+		lineageTag: 41992440-b7be-8b68-d0a5-6e2cf9d7799e
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Channel
+		dataType: string
+		lineageTag: 62fe22a5-5b75-915f-9478-4d72a6365fef
+		summarizeBy: none
+		sourceColumn: Channel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ElectroMart_Sales = m
+		mode: import
+		source =
+				let
+				    // Looks for the dataset in the usual places. If you keep it somewhere
+				    // else, add that full path to this list - nothing else needs changing.
+				    Candidates = {
+				        "D:\DVT\Exp-6a\electromart_sales.csv",
+				        "C:\DVT\Exp-6a\electromart_sales.csv",
+				        "D:\DVT\6a to 7b\DVT\Exp-6a\electromart_sales.csv",
+				        "D:\DVT\6a to 7b\DVT\exp6a\electromart_sales.csv",
+				        "C:\DVT\exp6a\electromart_sales.csv",
+				        "D:\DVT\exp6a\electromart_sales.csv",
+				        "C:\DVT\DVT\exp6a\electromart_sales.csv",
+				        "D:\DVT\DVT\exp6a\electromart_sales.csv",
+				        "E:\DVT\exp6a\electromart_sales.csv",
+				        "E:\DVT\DVT\exp6a\electromart_sales.csv"
+				    },
+				    Existing = List.Select(Candidates, each
+				        try Binary.Length(File.Contents(_)) > 0 otherwise false),
+				    DataFile = List.First(Existing, null),
+				    Located = if DataFile = null then error "Could not find electromart_sales.csv. Open Transform Data and add its full path to the Candidates list in this query." else DataFile,
+				    Source = Csv.Document(File.Contents(Located),[Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"OrderID", type text}, {"OrderDate", type date}, {"Product", type text}, {"Category", type text}, {"Region", type text}, {"City", type text}, {"UnitsSold", Int64.Type}, {"UnitPrice", Int64.Type}, {"Sales", Int64.Type}, {"Channel", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
