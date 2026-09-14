@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "8b282c93bd5f1d1a8dac",
+  "position": {
+    "x": 1174,
+    "y": 16,
+    "z": 3,
+    "height": 140,
+    "width": 370,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AirLink_Bookings"
+                    }
+                  },
+                  "Property": "Total Fare Revenue"
+                }
+              },
+              "queryRef": "AirLink_Bookings.Total Fare Revenue",
+              "nativeQueryRef": "Total Fare Revenue"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
