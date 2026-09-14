@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "6c7d6ba51af54a490858",
+  "position": {
+    "x": 16,
+    "y": 628,
+    "z": 6,
+    "height": 436,
+    "width": 944,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AirLink_Bookings"
+                    }
+                  },
+                  "Property": "cabin_class"
+                }
+              },
+              "queryRef": "AirLink_Bookings.cabin_class",
+              "nativeQueryRef": "cabin_class",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AirLink_Bookings"
+                    }
+                  },
+                  "Property": "Average Fare"
+                }
+              },
+              "queryRef": "AirLink_Bookings.Average Fare",
+              "nativeQueryRef": "Average Fare"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "AirLink_Bookings"
+                  }
+                },
+                "Property": "Average Fare"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

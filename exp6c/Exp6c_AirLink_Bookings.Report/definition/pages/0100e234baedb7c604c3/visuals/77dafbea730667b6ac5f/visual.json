@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "77dafbea730667b6ac5f",
+  "position": {
+    "x": 788,
+    "y": 16,
+    "z": 2,
+    "height": 140,
+    "width": 370,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AirLink_Bookings"
+                    }
+                  },
+                  "Property": "Average Fare"
+                }
+              },
+              "queryRef": "AirLink_Bookings.Average Fare",
+              "nativeQueryRef": "Average Fare"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
