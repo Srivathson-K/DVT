@@ -1,0 +1,156 @@
+AccommodationID,AccommodationName,AccommodationType,StarRating,DestinationID,PriceIndex,AvgRating
+1,Coastal Retreat Panaji,Luxury Hotel,4,1,1.955,3.7
+2,Accor Panaji,Homestay,3,1,0.51,4.2
+3,Taj Panaji,Serviced Apartment,3,1,1.062,4.2
+4,Zostel Panaji,Boutique Hotel,3,1,1.105,4.0
+5,Local Heritage Panaji,Budget Hotel,3,1,0.68,3.3
+6,Marriott Panaji,Villa,5,1,1.657,4.0
+7,Marriott Jaipur,Villa,4,2,1.462,4.4
+8,Marriott Jaipur,Hostel,2,2,0.262,3.3
+9,Sarovar Jaipur,Boutique Hotel,3,2,0.975,4.0
+10,Leela Jaipur,Business Hotel,4,2,1.087,4.3
+11,Novotel Manali,Hostel,2,3,0.245,3.5
+12,Treebo Manali,Homestay,2,3,0.42,4.5
+13,Local Heritage Manali,Resort,4,3,1.435,4.5
+14,Hilton Manali,Luxury Hotel,5,3,1.61,4.3
+15,Ibis Manali,Boutique Hotel,3,3,0.91,3.4
+16,Sarovar Manali,Serviced Apartment,3,3,0.875,4.0
+17,Leela Alappuzha,Villa,5,4,1.56,4.7
+18,Fern Alappuzha,Boutique Hotel,3,4,1.04,3.8
+19,Oberoi Alappuzha,Resort,5,4,1.64,4.3
+20,Taj Alappuzha,Serviced Apartment,4,4,1.0,4.5
+21,Sarovar Alappuzha,Budget Hotel,2,4,0.64,4.4
+22,Fern Port Blair,Business Hotel,3,5,1.667,3.7
+23,Ibis Port Blair,Homestay,3,5,0.69,4.0
+24,Leela Port Blair,Serviced Apartment,3,5,1.438,4.5
+25,Local Heritage Port Blair,Budget Hotel,2,5,0.92,3.7
+26,Fern Leh,Villa,5,6,2.145,4.2
+27,Leela Leh,Homestay,3,6,0.66,4.0
+28,Coastal Retreat Leh,Luxury Hotel,4,6,2.53,4.0
+29,Treebo Leh,Serviced Apartment,3,6,1.375,4.7
+30,Ibis Varanasi,Hostel,2,7,0.193,4.2
+31,Fern Varanasi,Homestay,3,7,0.33,4.5
+32,Sarovar Varanasi,Boutique Hotel,4,7,0.715,3.8
+33,Marriott Varanasi,Budget Hotel,2,7,0.44,4.3
+34,Oberoi Varanasi,Resort,4,7,1.127,3.6
+35,Accor Denpasar,Budget Hotel,2,8,0.96,3.7
+36,Radisson Denpasar,Villa,4,8,2.34,4.2
+37,Hilton Denpasar,Homestay,2,8,0.72,3.6
+38,Sarovar Denpasar,Resort,4,8,2.46,4.7
+39,Accor Denpasar,Serviced Apartment,3,8,1.5,3.9
+40,Taj Denpasar,Luxury Hotel,4,8,2.76,4.2
+41,Hilton Bangkok,Homestay,2,9,0.63,4.3
+42,Accor Bangkok,Resort,4,9,2.152,3.6
+43,Sarovar Bangkok,Serviced Apartment,3,9,1.312,4.5
+44,Coastal Retreat Bangkok,Villa,4,9,2.047,4.6
+45,Oberoi Bangkok,Boutique Hotel,3,9,1.365,4.3
+46,Zostel Singapore,Villa,4,10,2.827,4.1
+47,Ibis Singapore,Resort,5,10,2.972,3.7
+48,Sarovar Singapore,Hostel,2,10,0.507,4.2
+49,Accor Singapore,Boutique Hotel,4,10,1.885,4.1
+50,Local Heritage Dubai,Homestay,3,11,0.93,3.7
+51,Ibis Dubai,Hostel,2,11,0.542,3.5
+52,Leela Dubai,Boutique Hotel,3,11,2.015,4.7
+53,Leela Dubai,Resort,4,11,3.177,4.6
+54,Zostel Dubai,Budget Hotel,2,11,1.24,3.3
+55,Taj Male,Serviced Apartment,4,12,2.875,4.2
+56,Sarovar Male,Villa,4,12,4.485,4.6
+57,Taj Male,Budget Hotel,3,12,1.84,3.8
+58,Coastal Retreat Male,Business Hotel,4,12,3.335,4.5
+59,Taj Kathmandu,Homestay,3,13,0.42,4.0
+60,Ibis Kathmandu,Villa,4,13,1.365,4.6
+61,Hyatt Kathmandu,Budget Hotel,2,13,0.56,4.2
+62,Accor Kathmandu,Business Hotel,3,13,1.015,3.2
+63,Oberoi Kathmandu,Boutique Hotel,4,13,0.91,4.6
+64,Accor Colombo,Homestay,2,14,0.48,3.8
+65,Novotel Colombo,Budget Hotel,3,14,0.64,4.0
+66,Taj Colombo,Serviced Apartment,3,14,1.0,3.3
+67,Hilton Colombo,Luxury Hotel,5,14,1.84,3.9
+68,Treebo Colombo,Villa,5,14,1.56,5.0
+69,Coastal Retreat Colombo,Resort,4,14,1.64,4.3
+70,Accor Paris,Budget Hotel,2,15,1.56,4.1
+71,Local Heritage Paris,Hostel,2,15,0.682,4.2
+72,Oberoi Paris,Villa,4,15,3.802,4.4
+73,Taj Paris,Boutique Hotel,4,15,2.535,4.3
+74,Novotel Paris,Business Hotel,3,15,2.827,4.3
+75,Treebo Interlaken,Luxury Hotel,5,16,5.52,5.0
+76,Sarovar Interlaken,Homestay,3,16,1.44,4.0
+77,Taj Interlaken,Resort,4,16,4.92,5.0
+78,Hyatt Interlaken,Hostel,2,16,0.84,4.8
+79,Marriott Interlaken,Villa,4,16,4.68,4.2
+80,Ibis Interlaken,Business Hotel,4,16,3.48,4.5
+81,Zostel Rome,Luxury Hotel,4,17,4.255,4.6
+82,Hyatt Rome,Business Hotel,3,17,2.683,3.9
+83,Hyatt Rome,Villa,5,17,3.607,4.7
+84,Oberoi Rome,Hostel,2,17,0.647,3.2
+85,Taj Rome,Homestay,2,17,1.11,3.5
+86,Treebo London,Resort,5,18,4.202,5.0
+87,Oberoi London,Hostel,1,18,0.717,4.0
+88,Hilton London,Villa,5,18,3.997,5.0
+89,Oberoi London,Luxury Hotel,5,18,4.715,4.0
+90,Coastal Retreat London,Boutique Hotel,3,18,2.665,4.4
+91,Leela Thira,Hostel,1,19,0.612,3.6
+92,Sarovar Thira,Boutique Hotel,4,19,2.275,3.9
+93,Sarovar Thira,Serviced Apartment,4,19,2.188,4.8
+94,Accor Thira,Resort,4,19,3.587,4.5
+95,Treebo Reykjavik,Serviced Apartment,4,20,2.75,3.9
+96,Sarovar Reykjavik,Budget Hotel,2,20,1.76,3.9
+97,Hilton Reykjavik,Luxury Hotel,4,20,5.06,5.0
+98,Sarovar Reykjavik,Business Hotel,4,20,3.19,4.6
+99,Novotel Reykjavik,Hostel,2,20,0.77,3.3
+100,Marriott New York,Hostel,2,21,0.735,4.2
+101,Hilton New York,Resort,4,21,4.305,4.5
+102,Marriott New York,Serviced Apartment,4,21,2.625,4.6
+103,Hyatt New York,Business Hotel,4,21,3.045,4.3
+104,Sarovar Flagstaff,Homestay,2,22,1.02,4.5
+105,Accor Flagstaff,Business Hotel,3,22,2.465,4.4
+106,Fern Flagstaff,Villa,5,22,3.315,4.5
+107,Taj Flagstaff,Hostel,1,22,0.595,3.4
+108,Hyatt Flagstaff,Budget Hotel,2,22,1.36,3.7
+109,Zostel Toronto,Hostel,2,23,0.577,4.1
+110,Ibis Toronto,Villa,4,23,3.217,5.0
+111,Fern Toronto,Business Hotel,3,23,2.392,3.7
+112,Sarovar Toronto,Serviced Apartment,3,23,2.062,4.2
+113,Sarovar Toronto,Boutique Hotel,4,23,2.145,3.9
+114,Hyatt Cancun,Homestay,3,24,0.84,4.4
+115,Radisson Cancun,Villa,4,24,2.73,4.9
+116,Ibis Cancun,Business Hotel,3,24,2.03,3.5
+117,Leela Cancun,Luxury Hotel,5,24,3.22,4.7
+118,Zostel Rio de Janeiro,Business Hotel,3,25,1.885,4.8
+119,Marriott Rio de Janeiro,Homestay,2,25,0.78,4.1
+120,Radisson Rio de Janeiro,Serviced Apartment,4,25,1.625,4.4
+121,Hilton Rio de Janeiro,Budget Hotel,3,25,1.04,5.0
+122,Ibis Cusco,Budget Hotel,3,26,1.08,4.2
+123,Radisson Cusco,Serviced Apartment,3,26,1.688,4.5
+124,Marriott Cusco,Luxury Hotel,5,26,3.105,4.2
+125,Novotel Cusco,Resort,4,26,2.768,4.5
+126,Hilton Cusco,Hostel,2,26,0.472,3.5
+127,Novotel Cusco,Boutique Hotel,4,26,1.755,4.4
+128,Taj Cape Town,Luxury Hotel,4,27,3.45,4.4
+129,Accor Cape Town,Budget Hotel,3,27,1.2,3.8
+130,Marriott Cape Town,Business Hotel,3,27,2.175,4.9
+131,Hilton Cape Town,Villa,5,27,2.925,5.0
+132,Local Heritage Cape Town,Serviced Apartment,4,27,1.875,4.5
+133,Marriott Arusha,Serviced Apartment,4,28,2.25,4.5
+134,Leela Arusha,Villa,4,28,3.51,4.1
+135,Radisson Arusha,Boutique Hotel,4,28,2.34,4.3
+136,Fern Arusha,Budget Hotel,2,28,1.44,3.4
+137,Leela Cairo,Luxury Hotel,4,29,2.875,4.7
+138,Treebo Cairo,Serviced Apartment,3,29,1.562,3.9
+139,Local Heritage Cairo,Villa,5,29,2.438,4.3
+140,Ibis Cairo,Hostel,2,29,0.438,3.5
+141,Taj Cairo,Business Hotel,3,29,1.812,3.9
+142,Coastal Retreat Cairo,Resort,5,29,2.562,4.6
+143,Fern Sydney,Serviced Apartment,4,30,2.5,4.9
+144,Taj Sydney,Villa,4,30,3.9,4.2
+145,Fern Sydney,Hostel,2,30,0.7,3.0
+146,Treebo Sydney,Resort,5,30,4.1,4.5
+147,Accor Queenstown,Villa,5,31,3.705,4.2
+148,Zostel Queenstown,Business Hotel,4,31,2.755,4.9
+149,Hyatt Queenstown,Serviced Apartment,3,31,2.375,4.2
+150,Novotel Queenstown,Luxury Hotel,5,31,4.37,4.7
+151,Leela Queenstown,Homestay,3,31,1.14,4.8
+152,Ibis Tokyo,Hostel,1,32,0.682,4.2
+153,Ibis Tokyo,Homestay,2,32,1.17,4.1
+154,Treebo Tokyo,Business Hotel,4,32,2.827,4.9
+155,Fern Tokyo,Resort,5,32,3.997,4.1
